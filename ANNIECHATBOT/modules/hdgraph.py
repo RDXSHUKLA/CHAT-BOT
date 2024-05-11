@@ -7,7 +7,7 @@ from PIL import Image, ImageEnhance
 from ANNIECHATBOT import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@app.on_message(filters.reply & filters.command(["hdtgm"]))
+@app.on_message(filters.reply & filters.command(["tgm"]))
 async def create_telegraph_link(client, message):
     try:
         if not message.reply_to_message:

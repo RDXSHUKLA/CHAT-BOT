@@ -20,15 +20,16 @@ from ANNIECHATBOT.modules.helpers import PNG_BTN
 
 # Random Start Images
 IMG = [
-    "https://telegra.ph/file/61670d3373f2c8bdc2bcb.png",
-    "https://telegra.ph/file/74d333a2eb853d6d340e5.png",
-    "https://telegra.ph/file/e29c7352ac8a29c6d7d1c.png",
-    "https://telegra.ph/file/024c4d788089a549f7c18.png",
-    "https://telegra.ph/file/21a6c46b6b997c9baa507.png",
-    "https://telegra.ph/file/e4205a5896e9cd1354df4.png",
-    "https://telegra.ph/file/ceaee4640a3af5acdb717.png",
-    "https://telegra.ph/file/98f40c919b0598586d697.png",
-    "https://graph.org/file/36af423228372b8899f20.jpg",
+    "https://graph.org/file/8dcccaaa09c3ec38d9c75.jpg",
+    "https://graph.org/file/74d2385efc329c13c11e9.jpg",
+    "https://graph.org/file/d818146f35f6a439a7a7f.jpg",
+    "https://graph.org/file/d1d68eaaa8aecc68f8387.jpg",
+    "https://graph.org/file/257fe1ec8828b836c70f7.jpg",
+    "https://graph.org/file/8b044edab3d3173544439.jpg",
+    "https://graph.org/file/8ed87bfd7c0b3dbdd1bf5.jpg",
+    "https://graph.org/file/1a33887db1a3b5dee1b0a.jpg",
+    "https://graph.org/file/04ea07e42660988229834.jpg",
+    "https://graph.org/file/abb6b4bb00e2751bc9f54.jpg",
   
 ]
 

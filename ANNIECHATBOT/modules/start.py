@@ -20,8 +20,8 @@ from ANNIECHATBOT.modules.helpers import (
 )
 
 
-# Random start videos
-ANNIE_VID = [
+# Random start photo
+SHUKLA_IMG = [
     "https://telegra.ph/file/9b7e1b820c72a14d90be7.mp4",
     "https://telegra.ph/file/a4d90b0cb759b67d68644.mp4",
     "https://telegra.ph/file/72f349b1386d6d9374a38.mp4",
@@ -65,16 +65,16 @@ async def start_command_handler(_, m: Message):
         await asyncio.sleep(2)
         await umm.delete()
 
-        # Send a random video with a caption
-        await m.reply_video(
-            video=random.choice(ANNIE_VID),
+        # Send a random photo with a caption
+        await m.reply_photo(
+            photo=random.choice(SHUKLA_IMG),
             caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ {app.name}**\n**➻ ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [ᴏɴ/ᴏғғ]**\n<b>๏ ʜɪᴛ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ</b>""",
             reply_markup=InlineKeyboardMarkup(DEV_OP),
         )
         await add_served_user(m.from_user.id)
     else:
-        await m.reply_video(
-            video=random.choice(ANNIE_VID),
+        await m.reply_pic(
+            pic=random.choice(SHUKLA_IMG),
             caption=START,
             reply_markup=InlineKeyboardMarkup(HELP_START),
         )
@@ -85,15 +85,15 @@ async def start_command_handler(_, m: Message):
 @app.on_cmd("help")
 async def help_command_handler(_, m: Message):
     if m.chat.type == ChatType.PRIVATE:
-        hmm = await m.reply_video(
-            video=random.choice(ANNIE_VID),
+        hmm = await m.reply_photo(
+            photo=random.choice(SHUKLA_IMG),
             caption=HELP_READ,
             reply_markup=InlineKeyboardMarkup(HELP_BTN),
         )
         await add_served_user(m.from_user.id)
     else:
-        await m.reply_video(
-            video=random.choice(ANNIE_VID),
+        await m.reply_photo(
+            photo=random.choice(SHUKLA_IMG),
             caption="**ʜᴇʏ, ᴘᴍ ᴍᴇ ғᴏʀ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs!**",
             reply_markup=InlineKeyboardMarkup(HELP_BUTN),
         )
